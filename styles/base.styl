@@ -1,0 +1,189 @@
+// -------------------------------------
+//   Base
+// -------------------------------------
+// ----- Global defaults for Base-level tags (body, p, etc.)
+// -------------------------------------
+
+//.clearfix:before,
+//.clearfix:after
+//	content " "
+//	display table
+//
+//.clearfix:after
+//	clear both
+//
+//.clearfix
+//	*zoom 1
+//
+//$white = #fff
+//$creme = #fcfcfc
+
+$white = #FFF
+$black = #000
+$blue = #4386fc
+$grey = #a3a3a3
+
+body, html
+  background $white
+  height 100%
+  width 100%
+  font-family 'Roboto', sans-serif
+  font-weight 300
+
+#wrapper
+  width 300px
+  height 600px
+  border 1px solid $black
+  -webkit-box-sizing border-box
+  -moz-box-sizing border-box
+  box-sizing border-box
+  position relative
+  //display none
+  cursor pointer
+  
+#catch-all
+  width 100%
+  height 100%  
+
+
+
+.envelope-container
+  visibility visible  
+  
+  img
+    position absolute
+    top 46%
+    left 50%
+    -webkit-transform translate(-50%, -50%)
+    -moz-transform translate(-50%, -50%)
+    -ms-transform translate(-50%, -50%)
+    -o-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    
+  .mail-container
+    position absolute
+    overflow hidden
+    top 46%
+    left 50%
+    z-index 3
+    width 100%
+    height 30%  
+    -webkit-transform translate(-50%, -50%)
+    -moz-transform translate(-50%, -50%)
+    -ms-transform translate(-50%, -50%)
+    -o-transform translate(-50%, -50%)
+    transform translate(-50%, -50%)
+    
+    .mail-wine,
+    .mail-baking, .mail-tea,
+    .mail-icecream, .mail-metal, .mail-sneakers
+      z-index 4
+      top 100%
+      
+  .envelope-back
+    z-index 1
+    
+  #envelope-bg
+    visibility hidden
+    opacity 0 
+    
+  #envelope-closed
+    visibility visible
+    opacity 1
+    
+    
+  .envelope-tab
+    z-index 6
+    top 35.65% !important
+    -webkit-perspective 1000px 
+    -moz-perspective 1000px 
+    perspective 1000px  
+    -webkit-perspective-origin 0 50% 
+    -moz-perspective-origin 0 50% 
+    perspective-origin 0 50%
+    -webkit-transform-origin 0 100% 
+    -moz-transform-origin 0 100% 
+    -ms-transform-origin 0 100% 
+    -o-transform-origin 0 100% 
+    transform-origin 0 100%
+    -webkit-transform translate(-50%, -50%) rotateX(180deg)
+    -moz-transform translate(-50%, -50%) rotateX(180deg)
+    -ms-transform translate(-50%, -50%) rotateX(180deg)
+    -o-transform translate(-50%, -50%) rotateX(180deg)
+    transform translate(-50%, -50%) rotateX(180deg)
+
+  .envelope-front
+    z-index 5
+      
+span
+  position absolute
+  top 67%
+  top 72%
+  left 50%
+  z-index 3
+  letter-spacing 0.25px 
+  -webkit-transform translate(-50%, -50%)
+  -moz-transform translate(-50%, -50%)
+  -ms-transform translate(-50%, -50%)
+  -o-transform translate(-50%, -50%)
+  transform translate(-50%, -50%)
+  visibility hidden
+  color $grey
+  font-family 'Roboto', sans-serif
+  font-weight 300
+  
+// .span-wine
+//   visibility visible !important
+// .wine, .baking, .tea, .icecream, .metal, .sneakers
+//   visibility hidden
+
+// -------------------------------------
+//   End Frame
+// -------------------------------------
+.end-frame
+  visibility hidden
+  width 180px
+  position absolute
+  text-align center
+  top 60%
+  left 50%
+  -webkit-transform translate(-50%, -50%)
+  -moz-transform translate(-50%, -50%)
+  -ms-transform translate(-50%, -50%)
+  -o-transform translate(-50%, -50%)
+  transform translate(-50%, -50%)
+
+
+  h1
+    font-size 21px
+    color $grey
+    font-family 'Roboto', sans-serif
+    font-weight 400
+    position relative
+    top 20px
+
+  p
+    font-size 13px
+    letter-spacing 0.25px 
+    color $grey
+    font-family 'Roboto', sans-serif
+    margin-bottom 20px
+    position relative
+    top 20px
+
+  a
+    text-decoration none
+    color $white
+    background $blue
+    padding 6px 25px
+    font-size 13px
+    border-radius 3px
+    position relative
+    top 20px
+    letter-spacing 0.25px 
+    
+    &:hover
+      background darken($blue, 10%)
+
+
+
